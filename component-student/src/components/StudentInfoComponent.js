@@ -4,51 +4,46 @@ class StudentInfoComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            student: [
+            students: [
                 {
                     id: 1,
-                    name: 'Tran Van A',
+                    name: "Tran Vinh A ",
                     age: 20,
-                    address: 'GiaLai'
+                    address: "GiaLai"
                 },
                 {
                     id: 2,
-                    name: 'Tran Van B',
+                    name: "Tran Vinh B ",
                     age: 21,
-                    address: 'KonTum'
+                    address: "Đà Nẵng"
                 },
                 {
                     id: 3,
-                    name: 'Tran Van C',
+                    name: "Tran Vinh C ",
                     age: 22,
-                    address: 'Đà Nẵng'
+                    address: "Hà Nội"
                 },
                 {
                     id: 4,
-                    name: 'Tran Van D',
+                    name: "Tran Vinh D ",
                     age: 23,
-                    address: 'Quy Nhơn'
+                    address: "Sài Gòn"
                 },
                 {
                     id: 5,
-                    name: 'Tran Van E',
+                    name: "Tran Vinh E ",
                     age: 24,
-                    address: 'Nha Trang'
-                },
-                {
-                    id: 6,
-                    name: 'Tran Van F',
-                    age: 25,
-                    address: 'Quảng Nam'
+                    address: "Nam Định"
                 }
+
             ]
         }
     }
     render() {
         return (
             <div>
-                <h2 style={{textAlign:"center"}}>List Sinh Viên</h2>
-                <table >
+                <h2 style={{textAlign : "center"}}>List Sinh Vien</h2>
+                <table>
                     <thead>
                         <tr>
                             <th>Id</th>
@@ -58,14 +53,16 @@ class StudentInfoComponent extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        {this.state.student.map((student) => (
-                            <tr key={student.id}>
-                                <td>{student.id}</td>
-                                <td>{student.name}</td>
-                                <td>{student.age}</td>
-                                <td>{student.address}</td>
-                            </tr>
-                        ))}
+                        {this.state.students.map((value, index) => {
+                            return (
+                                <tr key={value.id}>
+                                    <td>{value.id}</td>
+                                    <td>{value.name}</td>
+                                    <td>{value.age}</td>
+                                    <td>{value.address}</td>
+                                </tr>
+                            )
+                        })}
                     </tbody>
                 </table>
             </div>
