@@ -1,9 +1,9 @@
 import './App.css';
-import Student from "./components/Student";
+import StudentInfoComponent from "./components/StudentInfoComponent";
 
 function App() {
   return (
-      <Student/>
+      <StudentInfoComponent/>
   );
 }
 

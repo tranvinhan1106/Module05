@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class Student extends Component {
+class StudentInfoComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -47,6 +47,7 @@ class Student extends Component {
     render() {
         return (
             <div>
+                <h2 style={{textAlign:"center"}}>List Sinh Viên</h2>
                 <table >
                     <thead>
                         <tr>
@@ -58,7 +59,7 @@ class Student extends Component {
                     </thead>
                     <tbody>
                         {this.state.student.map((student) => (
-                            <tr>
+                            <tr key={student.id}>
                                 <td>{student.id}</td>
                                 <td>{student.name}</td>
                                 <td>{student.age}</td>
@@ -67,9 +68,8 @@ class Student extends Component {
                         ))}
                     </tbody>
                 </table>
-
             </div>
         )
     }
 }
-export default Student;
+export default StudentInfoComponent;
