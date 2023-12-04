@@ -23,13 +23,14 @@ class App extends Component {
 
   render() {
     return (
-      <div class="centered-div"> 
+      <div class="centered-div">
         <thead>
-          <h1 style={{textAlign:'center'}}>Todo List</h1>
-          <input type='text' onChange={(evet) => this.handleChange(evet.target.value)}></input><button type='submit' onClick={()=>this.handleAddItem()}>Add</button>
+          <h1 style={{ textAlign: 'center' }}>Todo List</h1>
+          <input type='text' onChange={(evet) => this.handleChange(evet.target.value)}></input>
+          <button type='submit' onClick={() => this.handleAddItem()}>Add</button>
         </thead>
-        <br/>
-        <table className='table'>
+        <br />
+        <table>
           <tbody>
             {
               this.state.list.map((value) => {
