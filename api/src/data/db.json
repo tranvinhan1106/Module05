@@ -1,0 +1,51 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "AnTran",
+      "age": 19,
+      "gender": "1",
+      "languages": [
+        "C#"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "TrungDP",
+      "age": 30,
+      "gender": "1",
+      "languages": [
+        "C#",
+        "Java"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "AnTran",
+      "age": 20,
+      "gender": 1,
+      "languages": [
+        "Java",
+        "ReactJS"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "PhucVan",
+      "age": 28,
+      "gender": "1",
+      "languages": [
+        "ReactJS"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "TrieuTran",
+      "age": 21,
+      "gender": "0",
+      "languages": [
+        "Java"
+      ]
+    }
+  ]
+}

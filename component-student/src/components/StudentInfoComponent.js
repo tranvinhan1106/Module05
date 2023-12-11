@@ -39,6 +39,7 @@ class StudentInfoComponent extends Component {
             ]
         }
     }
+    
     render() {
         return (
             <div>
