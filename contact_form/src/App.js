@@ -33,11 +33,11 @@ export default function App() {
   }
 
   function handleSubmit() {
-    alert("Login in successfully!!!");
+    alert("Add contact successfully!!!");
   }
 
   return (
-    <div>
+    <div >
       <h1>Contact form</h1>
       <Formik
         initialValues={form}
@@ -60,11 +60,11 @@ export default function App() {
             </div>
             <div
               className={`custom-input ${errors.email ? "custom-input-error" : ""
-                }`}
+                }`}   
             >
               <label>Email</label>
               <input
-                type="email"
+                type="text"
                 name="email"
                 value={form.email || ""}
                 onChange={handleChange}
